@@ -16,7 +16,7 @@ const router = express.Router();
 
 router.get('/haha', (req, res) => res.json('hihhihi'));
 
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
 //app.use('/', (req, res) => res.sendFile(path.resolve(__dirname, '../public/index.html')));
 app.get('/haha', (req, res) => res.json('hihhihi'));
